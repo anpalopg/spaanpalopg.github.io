@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <img id="logo" class="logo" src="imagenes/logo.png" alt="Logo de EGES">
+        <button id="abrir" class="abrir-menu"> ABRIR</button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu">Cerrar</button>
+            <ul class="nav-list">
+                <li><a href="1.html">HOME</a></li>
+                <li><a href="PLANYOURVISIT.html">PLAN YOUR VISIT</a></li>
+                <li><a href="SERVICE.html ">SERVICE</a></li>
+                <li><a href="ABOUTUS.html">ABOUT US</a></li>
+                <li><a href="OFFERS.html">OFFERS</a></li>
+                <a href="https://wa.me/3117408653">
+                    <img src="imagenes/wap.png" alt="WhatsApp" class="whatsapp-icon">
+                </a>
+                <a href="https://www.instagram.com/equilibriumsantarosa/">
+                    <img src="imagenes/ig.png" alt="Instagram Icon" class="instagram-icon">
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <section class="testimonials">
+        <h2 class="spaced-text">S         E        R        V        I       C       E     </h2>
+    </section>
+      
+    <div class="new-services">
+        <div class="service-item">
+            <img src="imagenes/SERVICIOS.jpg" alt="Massage">
+            <h2>Spa Day</h2>
+        </div>
+        <div class="service-item">
+            <img src="imagenes/CORPORAL.jpg" alt="Corporal">
+            <h2>Corporal</h2>
+        </div>
+        <div class="service-item">
+            <img src="imagenes/FACIAL.jpeg" alt="Facial">
+            <h2>Facial</h2>
+        </div>
+        <div class="service-item">
+            <img src="imagenes/MANIPEDI.jpg" alt="Mani & Pedi">
+            <h2>MANI & PEDI</h2>
+        </div>
+    </div>
+    
+
+
+        <div class="carousel-2">
+            <div class="carousel-inner">
+                <img src="imagenes/12.jpg" alt="Mani & Pedi">
+                <img src="imagenes/13.jpg" alt="Mani & Pedi">
+                <img src="imagenes/14.jpg" alt="Mani & Pedi">
+                <img src="imagenes/15.jpg" alt="Mani & Pedi">
+                <img src="imagenes/16.jpg" alt="Mani & Pedi">
+                <img src="imagenes/yoga.jpg" alt="Mani & Pedi">
+                <img src="imagenes/yoga2.jpg" alt="Mani & Pedi">
+                <img src="imagenes/yoga3.jpg" alt="Mani & Pedi">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        
+
+    <div class="cta-button">
+        <a href="BOOKE.html">Book Now</a>
+    </div>
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">T Y C</a> |
+                <a href="#">Política de Privacidad</a> |
+                <a href="#">Mapa del Sitio</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="imagenes/gmail-removebg-preview.png" alt="Correo"></a>
+
+                <a href="https://www.instagram.com/equilibriumsantarosa/">
+                    <img src="imagenes/ig.png" alt="Instagram">
+                </a>
+                <a href="https://wa.me/3117408653">
+                    <img src="imagenes/wap2-removebg-preview.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <script>
+        const abrir = document.getElementById('abrir');
+        const cerrar = document.getElementById('cerrar');
+        const nav = document.getElementById('nav');
+
+        abrir.addEventListener('click', () => {
+            nav.style.display = 'block';  // Mostrar menú
+        });
+
+        cerrar.addEventListener('click', () => {
+            nav.style.display = 'none';  // Ocultar menú
+        });
+
+
+        let currentSlide = 0;
+
+function changeSlide(direction) {
+    const slides = document.querySelectorAll('.carousel-inner img');
+    currentSlide += direction;
+
+    if (currentSlide < 0) {
+        currentSlide = slides.length - 1; // Volver al último slide
+    } else if (currentSlide >= slides.length) {
+        currentSlide = 0; // Volver al primer slide
+    }
+
+    const offset = -currentSlide * 100; // Desplazar según el índice del slide actual
+    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+}
+
+    </script>
+</body>
+</html>

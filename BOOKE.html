@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img id="logo" class="logo" src="imagenes/logo.png" alt="Logo de EGES">
+        <button id="abrir" class="abrir-menu"> ABRIR</button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu">Cerrar</button>
+            <ul class="nav-list">
+                <li><a href="1.html">HOME</a></li>
+                <li><a href="PLANYOURVISIT.html">PLAN YOUR VISIT</a></li>
+                <li><a href="SERVICE.html ">SERVICE</a></li>
+                <li><a href="ABOUTUS.html">ABOUT US</a></li>
+                <li><a href="OFFERS.html">OFFERS</a></li>
+                <a href="https://wa.me/3117408653">
+                    <img src="imagenes/wap.png" alt="WhatsApp" class="whatsapp-icon">
+                </a>
+                <a href="https://www.instagram.com/equilibriumsantarosa/">
+                    <img src="imagenes/ig.png" alt="Instagram Icon" class="instagram-icon">
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <section class="testimonials">
+        <h2 class="spaced-text">B O O K - N O W</h2>
+        <H5>CLICK ON ME </H5>
+    </section>
+
+    <div class="center">
+        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=4UqjbG9GvESnqgrFp4xhseDuaByxeRVBnuXO7DyeXWRUM1lMUjE3WFlYRjlCOFZPUEtUREdRNllSVy4u">
+            <img src="imagenes/lotus.png" alt="catálogo">
+           
+        </a>
+    </div>
+
+
+
+   
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">T Y C</a> |
+                <a href="#">Política de Privacidad</a> |
+                <a href="#">Mapa del Sitio</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="imagenes/gmail-removebg-preview.png" alt="Correo"></a>
+
+                <a href="https://www.instagram.com/equilibriumsantarosa/">
+                    <img src="imagenes/ig.png" alt="Instagram">
+                </a>
+                <a href="https://wa.me/3117408653">
+                    <img src="imagenes/wap2-removebg-preview.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+     <!-- https://www.youtube.com/watch?v=Xs3cC8-5QDI&t=802s -->
+    <script>
+        const abrir = document.getElementById('abrir');
+        const cerrar = document.getElementById('cerrar');
+        const nav = document.getElementById('nav');
+
+        abrir.addEventListener('click', () => {
+            nav.style.display = 'block';  // Mostrar menú
+        });
+
+        cerrar.addEventListener('click', () => {
+            nav.style.display = 'none';  // Ocultar menú
+        });
+    </script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

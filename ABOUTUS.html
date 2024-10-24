@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img id="logo" class="logo" src="imagenes/logo.png" alt="Logo de EGES">
+        <button id="abrir" class="abrir-menu"> ABRIR</button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu">Cerrar</button>
+            <ul class="nav-list">
+                <li><a href="1.html">HOME</a></li>
+                <li><a href="PLANYOURVISIT.html">PLAN YOUR VISIT</a></li>
+                <li><a href="SERVICE.html ">SERVICE</a></li>
+                <li><a href="ABOUTUS.html">ABOUT US</a></li>
+                <li><a href="OFFERS.html">OFFERS</a></li>
+                <a href="https://wa.me/3117408653">
+                    <img src="imagenes/wap.png" alt="WhatsApp" class="whatsapp-icon">
+                </a>
+                <a href="https://www.instagram.com/equilibriumsantarosa/">
+                    <img src="imagenes/ig.png" alt="Instagram Icon" class="instagram-icon">
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="about-us">
+        <div class="about-text">
+            <h2>ABOUT US</h2>
+            <p>Bienvenidos a nuestro centro de relajación, un refugio donde encontrarás el balance perfecto para desconectar y rejuvenecer.</p>
+        </div>
+        <div class="about-image">
+            <img src="imagenes/rostro.jpg" alt="About Us Image">
+        </div>
+        <img src="imagenes/rostro 2.jpg" alt="About Us Image">
+    </div>
+
+    <div class="team">
+        <h2>TEAM</h2>
+        <div class="team-members">
+            <div class="member">
+                <img src="imagenes/PERSONAMF.jpg" alt="Ángela - Fisioterapeuta">
+                <h3>ÁNGELA</h3>
+                <p>Fisioterapeuta</p>
+            </div>
+            <div class="member">
+                <img src="imagenes/PERSONAH.jpg" alt="Óscar - Masajista">
+                <h3>ÓSCAR</h3>
+                <p>Masajista</p>
+            </div>
+            <div class="member">
+                <img src="imagenes/PERSONAMM.png" alt="Camila - Manicurista">
+                <h3>CAMILA</h3>
+                <p>Manicurista</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="map-section">
+        <h2>FIND US HERE</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.100306032013!2d-75.71192848450338!3d4.353202696073485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4a2ccfd8f40e0b%3A0xaef6885cb99994c9!2sCra%2014%20%2310-32%2C%20Santa%20Rosa%2C%20Risaralda%2C%20Colombia!5e0!3m2!1sen!2sus!4v1695384798456!5m2!1sen!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+    
+        <!-- PONER LA OTRA PAGINAA  -->
+        <div class="cta-button">
+            <a href="BOOKE.html">BOOK NOW</a>
+        </div>
+        
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">T Y C</a> |
+                <a href="#">Política de Privacidad</a> |
+                <a href="#">Mapa del Sitio</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="imagenes/gmail-removebg-preview.png" alt="Correo"></a>
+
+                <a href="https://www.instagram.com/equilibriumsantarosa/">
+                    <img src="imagenes/ig.png" alt="Instagram">
+                </a>
+                <a href="https://wa.me/3117408653">
+                    <img src="imagenes/wap2-removebg-preview.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+     <!-- https://www.youtube.com/watch?v=Xs3cC8-5QDI&t=802s -->
+    <script>
+        const abrir = document.getElementById('abrir');
+        const cerrar = document.getElementById('cerrar');
+        const nav = document.getElementById('nav');
+
+        abrir.addEventListener('click', () => {
+            nav.style.display = 'block';  // Mostrar menú
+        });
+
+        cerrar.addEventListener('click', () => {
+            nav.style.display = 'none';  // Ocultar menú
+        });
+
+
+    </script>
+    
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+        <img id="logo" class="logo" src="imagenes/logo.png" alt="Logo de EGES">
+        <button id="abrir" class="abrir-menu"> ABRIR</button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu">Cerrar</button>
+            <ul class="nav-list">
+                <li><a href="1.html">HOME</a></li>
+                <li><a href="PLANYOURVISIT.html">PLAN YOUR VISIT</a></li>
+                <li><a href="SERVICE.html ">SERVICE</a></li>
+                <li><a href="ABOUTUS.html">ABOUT US</a></li>
+                <li><a href="OFFERS.html">OFFERS</a></li>
+                <a href="https://wa.me/3117408653">
+                    <img src="imagenes/wap.png" alt="WhatsApp" class="whatsapp-icon">
+                </a>
+                <a href="https://www.instagram.com/equilibriumsantarosa/">
+                    <img src="imagenes/ig.png" alt="Instagram Icon" class="instagram-icon">
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-image">
+        <img src="imagenes/2pagina.jpeg" alt="Spa Image">
+    </div>
+
+
+    <h1 class="centered">PLAN YOUR VISIT</h1>
+
+    <div class="cta-button">
+        <a href="BOOKE.html">BOOK NOW</a>
+    </div>
+    <div class="services">
+        <div class="service-item" onclick="flipCard(this)">
+            <div class="card">
+                <div class="card-front">
+                    <img src="imagenes/lotus.png" alt="Day of Spa">
+                    <h2>Day of SPA</h2>
+                </div>
+                <div class="card-back">
+                    <p>"Dedica un día a tu bienestar con tratamientos rejuvenecedores y acceso a instalaciones exclusivas para relajarte y revitalizarte.".</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-item" onclick="flipCard(this)">
+            <div class="card">
+                <div class="card-front">
+                    <img src="imagenes/corazon.png" alt="For You">
+                    <h2>For You</h2>
+                </div>
+                <div class="card-back">
+                    <p>""Trae ropa cómoda y un traje de baño. Llega 15 minutos antes para relajarte y prepararte."".</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-item" onclick="flipCard(this)">
+            <div class="card">
+                <div class="card-front">
+                    <img src="imagenes/etiqueta.png" alt="Paquetes Especiales">
+                    <h2>Paquetes Especiales</h2>
+                </div>
+                <div class="card-back">
+                    <p>Paquetes especiales para ocasiones únicas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-item" onclick="flipCard(this)">
+            <div class="card">
+                <div class="card-front">
+                    <img src="imagenes/reloj.png" alt="Horarios y Reservas">
+                    <h2>Horarios y Reservas</h2>
+                </div>
+                <div class="card-back">
+                    <p>Consulta nuestros horarios y reserva tu cita.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-item" onclick="flipCard(this)">
+            <div class="card">
+                <div class="card-front">
+                    <img src="imagenes/cabeza.png" alt="Beneficios">
+                    <h2>Beneficios</h2>
+                </div>
+                <div class="card-back">
+                    <p>"Escapa a un mundo de tranquilidad."</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-item" onclick="flipCard(this)">
+            <div class="card">
+                <div class="card-front">
+                    <img src="imagenes/hoja.png" alt="Ceremonias de Sanación">
+                    <h2>Ceremonias de Sanación</h2>
+                </div>
+                <div class="card-back">
+                    <p>"Descubre la unión perfecta entre el bienestar físico, la conexión espiritual y la serenidad de la naturaleza a través de nuestras Ceremonias .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <section class="testimonials">
+        <h2 class="spaced-text">C A T A L O G O  </h2>
+    </section>
+
+
+    <div class="center">
+        <a href="https://heyzine.com/flip-book/3fdcea3358.html">
+            <img src="imagenes/catalogo.png" alt="catálogo">
+        </a>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">T Y C</a> |
+                <a href="#">Política de Privacidad</a> |
+                <a href="#">Mapa del Sitio</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="imagenes/gmail-removebg-preview.png" alt="Correo"></a>
+
+                <a href="https://www.instagram.com/equilibriumsantarosa/">
+                    <img src="imagenes/ig.png" alt="Instagram">
+                </a>
+                <a href="https://wa.me/3117408653">
+                    <img src="imagenes/wap2-removebg-preview.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script>
+        const abrir = document.getElementById('abrir');
+        const cerrar = document.getElementById('cerrar');
+        const nav = document.getElementById('nav');
+
+        abrir.addEventListener('click', () => {
+            nav.style.display = 'block';  // Mostrar menú
+        });
+
+        cerrar.addEventListener('click', () => {
+            nav.style.display = 'none';  // Ocultar menú
+        });
+
+
+        function flipCard(card) {
+    card.classList.toggle('flipped'); // Alterna la clase 'flipped' para voltear la tarjeta
+}
+
+    </script>
+    
+</body>
+</html>

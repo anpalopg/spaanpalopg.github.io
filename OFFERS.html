@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img id="logo" class="logo" src="imagenes/logo.png" alt="Logo de EGES">
+        <button id="abrir" class="abrir-menu"> ABRIR</button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu">Cerrar</button>
+            <ul class="nav-list">
+                <li><a href="1.html">HOME</a></li>
+                <li><a href="PLANYOURVISIT.html">PLAN YOUR VISIT</a></li>
+                <li><a href="SERVICE.html ">SERVICE</a></li>
+                <li><a href="ABOUTUS.html">ABOUT US</a></li>
+                <li><a href="OFFERS.html">OFFERS</a></li>
+                <a href="https://wa.me/3117408653">
+                    <img src="imagenes/wap.png" alt="WhatsApp" class="whatsapp-icon">
+                </a>
+                <a href="https://www.instagram.com/equilibriumsantarosa/">
+                    <img src="imagenes/ig.png" alt="Instagram Icon" class="instagram-icon">
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="main-image">
+            <img src="imagenes/velas2.jpg" alt="velas" class="full-screen-image">
+        </div>
+    
+        <section class="testimonials">
+            <h2 class="spaced-text">O F E R T A S</h2>
+        </section>
+    </div>
+    
+    
+   
+    <div class="offers">
+        <div class="offer" onclick="showText('50% DISCOUNT IN ANY TYPE OF SPA')">
+            <img src="imagenes/of (1).jpg" alt="Offer 1">
+        </div>
+        <div class="offer" onclick="showText('GIVE YOUR HERO THE BEST DAY -20%(FACIAL)')">
+            <img src="imagenes/of (1).png" alt="Offer 2">
+        </div>
+        <div class="offer" onclick="showText('YOU’R MY EVERYTHING   ALL-INCLUIDE')">
+            <img src="imagenes/of (2).jpg" alt="Offer 3">
+        </div>
+    </div>
+    
+    <!-- Elemento para mostrar el texto -->
+    <div id="offerText" class="offer-text"></div>
+    
+
+    <div class="week">
+        <h2>ENJOY YOUR WEEK</h2>
+        <div class="days">
+            <div class="day" onclick="showText('Lunes: Relajación Total')">
+                <img src="imagenes/tipos-de-flores-azules-jpg-154626-1024x576.jpg" alt="Lunes">
+                <span>L</span>
+            </div>
+            <div class="day" onclick="showText('Martes: Cuidado de la Piel!')">
+                <img src="imagenes/flores-simbolismo-espiritualidad_09ff3f15_1200x1200.jpg" alt="Martes">
+                <span>M</span>
+            </div>
+            <div class="day" onclick="showText('Miércoles:  Estimulación Energética')">
+                <img src="imagenes/images (3).jpg" alt="Miércoles">
+                <span>M</span>
+            </div>
+            <div class="day" onclick="showText('Jueves: Detox y Revitalización.')">
+                <img src="imagenes/images (4).jpg" alt="Jueves">
+                <span>J</span>
+            </div>
+            <div class="day" onclick="showText('Viernes: SORPRESA')">
+                <img src="imagenes/images (5).jpg" alt="Viernes">
+                <span>V</span>
+            </div>
+            <div class="day" onclick="showText('Sábado: Nutrición')">
+                <img src="imagenes/images (6).jpg" alt="Sábado">
+                <span>S</span>
+            </div>
+        </div>
+    
+        <!-- Elemento para mostrar el texto -->
+        <div id="dayText" class="day-text"></div>
+    </div>
+    
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">T Y C</a> |
+                <a href="#">Política de Privacidad</a> |
+                <a href="#">Mapa del Sitio</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="imagenes/gmail-removebg-preview.png" alt="Correo"></a>
+
+                <a href="https://www.instagram.com/equilibriumsantarosa/">
+                    <img src="imagenes/ig.png" alt="Instagram">
+                </a>
+                <a href="https://wa.me/3117408653">
+                    <img src="imagenes/wap2-removebg-preview.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+     <!-- https://www.youtube.com/watch?v=Xs3cC8-5QDI&t=802s -->
+    <script>
+        const abrir = document.getElementById('abrir');
+        const cerrar = document.getElementById('cerrar');
+        const nav = document.getElementById('nav');
+
+        abrir.addEventListener('click', () => {
+            nav.style.display = 'block';  // Mostrar menú
+        });
+
+        cerrar.addEventListener('click', () => {
+            nav.style.display = 'none';  // Ocultar menú
+        });
+
+    function showText(text) {
+    const offerTextDiv = document.getElementById('offerText');
+    offerTextDiv.innerHTML = text; // Actualiza el texto a mostrar
+
+
+    function showText(text) {
+    const dayTextDiv = document.getElementById('dayText');
+    dayTextDiv.innerHTML = text; // Actualiza el texto a mostrar
+}
+
+     }
+
+    </script>
+   
+    
+    
+    
+    
+</body>
+</html>

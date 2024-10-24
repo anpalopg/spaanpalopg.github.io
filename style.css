@@ -1,0 +1,701 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcf7f7;
+}
+header {
+    background-color: #f5f1f1;
+    text-align: center;
+    padding: 10px 0;
+}
+header img {
+    max-width: 100%;
+}
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+.button {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #e400ff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.circles {
+    display: flex; /* Asegura que los círculos estén alineados en línea */
+    justify-content: center; /* Centra los círculos en el contenedor */
+    gap: 40px; /* Aumenta el espacio entre los círculos */
+    margin: 20px 0; /* Espacio arriba y abajo */
+}
+
+.circles img {
+    width: 150px; /* Tamaño de todos los círculos */
+    height: 150px; /* Mantiene la relación de aspecto */
+    border-radius: 50%; /* Hace que las imágenes sean circulares */
+    opacity: 0; /* Comienza invisible */
+    position: relative; /* Necesario para animar la posición */
+    animation: bounceIn 0.6s forwards; /* Cambia la animación */
+}
+
+/* Define posiciones diferentes para cada círculo */
+.circles img:nth-child(1) {
+    animation-delay: 0.2s; /* Retraso de animación */
+    transform: translateY(20px); /* Comienza más abajo */
+}
+
+.circles img:nth-child(2) {
+    animation-delay: 0.4s; /* Retraso de animación */
+    transform: translateY(10px); /* Comienza un poco más abajo */
+}
+
+.circles img:nth-child(3) {
+    animation-delay: 0.6s; /* Retraso de animación */
+    transform: translateY(0); /* Comienza en su posición original */
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0; /* Inicia completamente transparente */
+        transform: translateY(30px); /* Comienza más abajo */
+    }
+    50% {
+        opacity: 1; /* A mitad de la animación, ya es visible */
+        transform: translateY(-10px); /* Sube un poco */
+    }
+    100% {
+        opacity: 1; /* Finaliza completamente visible */
+        transform: translateY(0); /* Termina en su posición original */
+    }
+}
+.spaced-text {
+    letter-spacing: 0.5em; /* Espacio entre letras */
+    text-align: center; /* Centra el texto */
+    font-size: 2rem; /* Ajusta el tamaño de fuente según lo desees */
+    margin: 20px 0; /* Espacio arriba y abajo */
+}
+
+
+
+
+.center {
+    display: flex; /* Utiliza Flexbox para centrar */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente (opcional) */
+    margin: 20px 0; /* Espacio arriba y abajo */
+}
+
+
+.testimonial {
+    background-color: #769B9A;
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 600px;
+}
+.social {
+    text-align: center;
+    margin: 40px 0;
+}
+.social img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+
+*{
+   margin : 0;
+   padding : 0;
+   box-sizing : border-box ;
+   font-family:sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color:#f5ecec;
+}
+
+#logo {
+    width: 300px; /* Ajusta este valor según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que no haya espacio en la parte inferior */
+    margin: 0 auto; /* Centra la imagen si se necesita */
+}
+
+.whatsapp-icon {
+    width: 70px; /* Ajusta este valor según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.nav {
+    display: none; /* Ocultar el menú inicialmente */
+    background-color: #ffffffd2;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 10px 0;
+}
+
+.abrir-menu, .cerrar-menu {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.abrir-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.cerrar-menu {
+    display: block;
+    margin: 10px auto;
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .abrir-menu {
+        display: block;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .nav-visible {
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #a8b3ee;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-end;
+        color: #d3d3d3;
+    }
+ }
+
+ .main-image {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.main-image img {
+    max-width: 100%;
+    height: auto;
+}
+.cta-button {
+    text-align: center;
+    margin: 20px 0;
+}
+.cta-button a {
+    background-color: #d81b60;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.service-item {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.service-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.about-text {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #d9e6e7;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.about-text h2 {
+    font-size: 24px;
+}
+.about-text p {
+    font-size: 16px;
+}
+.about-image img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+.team {
+    text-align: center;
+    padding: 20px;
+}
+.team h2 {
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.member {
+    text-align: center;
+}
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.map-section {
+    text-align: center;
+    padding: 20px;
+}
+.map-section img {
+    width: 300px;
+    border-radius: 10px;
+}
+.cta-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.offers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #C8DFE9;
+}
+.offers img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 0 15px;
+}
+.week {
+    text-align: center;
+    padding: 20px;
+    background-color: #E8F1F2;
+}
+.week h2 {
+    font-size: 28px;
+    margin: 0;
+}
+.days {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+.day {
+    text-align: center;
+}
+.day img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.day span {
+    display: block;
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+}
+
+/* LOGOO*/
+.logo {
+    display: block;           /* Permite centrar la imagen con margin */
+    margin: 0 auto;           /* Centra la imagen horizontalmente */
+    width: 400px;             /* Ajusta el ancho para agrandar la imagen */
+    height: auto;             /* Mantiene la proporción de la imagen */
+    padding-top: 20px;        /* Añade espacio arriba si es necesario */
+}
+
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-icons {
+        margin-top: 10px;
+        justify-content: center;
+    }
+}
+
+.carousel-item img {
+    height: 400px; /* Ajusta la altura de las imágenes */
+    object-fit: cover; /* Mantiene la relación de aspecto */
+}
+
+
+.centered {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 20px 0; /* Espacio arriba y abajo */
+}
+
+
+.offers {
+    display: flex;
+    justify-content: space-around; /* Espacio entre las imágenes */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+.offer img {
+    width: 200px; /* Ajusta el tamaño de las imágenes */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: transform 0.3s; /* Efecto de transición al pasar el mouse */
+}
+
+.offer img:hover {
+    transform: scale(1.5); /* Aumenta un poco el tamaño al pasar el mouse */
+}
+
+.offer-text {
+    text-align: center; /* Centra el texto */
+    font-size: 1.5em; /* Tamaño del texto */
+    margin-top: 20px; /* Margen superior */
+}
+.week {
+    text-align: center; /* Centra el texto en la sección */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.days {
+    display: flex;
+    justify-content: space-around; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+}
+
+.day {
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    margin: 15px; /* Aumenta el espacio entre los días */
+}
+
+.day img {
+    width: 120px; /* Aumenta el tamaño de las imágenes */
+    height: 120px; /* Aumenta el tamaño para ser cuadrado, ajusta según tus necesidades */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s; /* Efecto de transición al pasar el mouse */
+}
+
+.day img:hover {
+    transform: scale(1.9); /* Aumenta más el tamaño al pasar el mouse */
+}
+
+.day-text {
+    font-size: 1.5em; /* Tamaño del texto */
+    margin-top: 20px; /* Margen superior */
+}
+
+.services {
+    display: flex;
+    justify-content: space-around; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    background-color: #769B9A; /* Fondo para la sección de servicios */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.service-item {
+    text-align: center; /* Centra el texto y las imágenes */
+    margin: 15px; /* Espacio entre los elementos */
+    width: 200px; /* Ancho fijo para las tarjetas */
+    height: 250px; /* Altura fija para mantener la relación de aspecto */
+    perspective: 1000px; /* Añade perspectiva para el efecto de voltear */
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative; /* Necesario para el efecto de voltear */
+    transform-style: preserve-3d; /* Mantiene la forma 3D de las caras */
+    transition: transform 0.6s; /* Efecto de transición */
+}
+
+.card-front, .card-back {
+    position: absolute; /* Posición absoluta para superponer las caras */
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta la cara trasera cuando no está visible */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff; /* Color de fondo de las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de profundidad */
+}
+
+.card-back {
+    transform: rotateY(180deg); /* Rota la cara trasera */
+    background-color: #769B9A; /* Color de fondo para la cara trasera */
+    color: white; /* Color de texto en la cara trasera */
+}
+
+.service-item:hover .card {
+    transform: rotateY(180deg); /* Gira la tarjeta al pasar el mouse */
+}
+
+.card img {
+    width: 80%; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+.card h2 {
+    margin-top: 10px; /* Espacio entre la imagen y el título */
+    font-size: 1.2em; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+}
+
+
+
+
+.team {
+    text-align: center; /* Centra el título y los miembros */
+    margin: 20px 0; /* Espacio alrededor del equipo */
+}
+
+.team-members {
+    display: flex; /* Flexbox para alinear los miembros en fila */
+    justify-content: center; /* Centra horizontalmente los miembros */
+    gap: 20px; /* Espacio entre los miembros */
+}
+
+.member {
+    transition: transform 0.3s ease; /* Transición suave para la transformación */
+}
+
+.member img {
+    width: 150px; /* Ajusta el tamaño de las imágenes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.member:hover {
+    transform: scale(2.5); /* Escala al 110% al pasar el mouse */
+}
+
+.map-section {
+    text-align: center; /* Centra el texto y el mapa */
+    margin: 20px 0; /* Espacio alrededor de la sección */
+}
+
+.map-section h2 {
+    margin-bottom: 15px; /* Espacio entre el título y el mapa */
+}
+
+
+.carousel-2 {
+    position: relative;
+    max-width: 800px; /* Ajusta según sea necesario */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-inner img {
+    width: 100%; /* Asegura que las imágenes llenen el carrusel */
+    height: auto; /* Mantiene la relación de aspecto */
+    flex: 0 0 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+
+.main-container {
+    position: relative; /* Permite que los elementos hijos se posicionen respecto a este contenedor */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+}
+
+.main-image {
+    position: relative; /* Posiciona el contenedor de la imagen */
+}
+
+.full-screen-image {
+    width: auto; /* Mantiene el tamaño original de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+    display: block; /* Elimina el espacio en la parte inferior */
+    animation: scaleAnimation 15s infinite alternate; /* Aplica la animación */
+}
+
+/* Definición de la animación */
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1); /* Escala normal */
+    }
+    100% {
+        transform: scale(1.5); /* Aumenta el tamaño al 105% */
+    }
+}
+
+/* Estilos para la sección de testimonios */
+.testimonials {
+    position: relative; /* Posiciona la sección de testimonios */
+    text-align: center; /* Centra el texto */
+    z-index: 1; /* Asegura que el texto esté por encima del fondo */
+    padding: 20px; /* Agrega espacio alrededor del texto */
+}
+
+/* Estilo adicional para el texto */
+.spaced-text {
+    font-size: 2em; /* Tamaño del texto */
+    margin: 20px 0; /* Espacio alrededor del texto */
+    color: #333; /* Color del texto */
+}
+
+
+.instagram-icon {
+    width: 30px; /* Ajusta este valor según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.new-services {
+    display: flex;
+    justify-content: space-around; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.service-item {
+    text-align: center; /* Centra el texto y las imágenes */
+    margin: 15px; /* Espacio entre los elementos */
+}
+
+.service-item img {
+    width: 200px; /* Ancho fijo para las imágenes */
+    height: 150px; /* Altura fija para mantener la relación de aspecto */
+    border-radius: 10px; /* Bordes redondeados */
+    object-fit: cover; /* Cubre el área sin distorsionar la imagen */
+    transition: transform 0.3s; /* Transición suave para el efecto de hover */
+}
+
+.service-item img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+.service-item h2 {
+    margin-top: 10px; /* Espacio entre la imagen y el título */
+    font-size: 1.2em; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+}
